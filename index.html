@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="author" content="Scalateam Studio">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="language" content="Serbian">
+    <meta name="copyright" content="Scalateam Studio - 2015">
+
+    <title>Angerona</title>
+
+    <meta name="Googlebot" content="index, follow">
+    <meta name="revisit-after" content="3">
+    <meta name="Robots" content="INDEX, FOLLOW">
+
+    <meta property="og:site_name" content="">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:title" content="">
+    <meta property="og:url" content="">
+
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-navbutton-color" content="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="images/fav.png" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+    <!-- <nav class="navbar navbar-default navbar-fixed-top navbar navv">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand logo " href="#"> <img src="images/logo.png"> </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle link " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Naša priča<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Prodaja LED bilborda<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Iznajmljivanje bilborda</a></li>
+        <li><a href="#">Usluge</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">Kontakt</a></li>
+        <li><a href="#"><img src="images/search.png"></a></li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+
+
+    <nav class="navbar navbar-expand-lg fixed-top navv">
+        <a class="navbar-brand logo " href="#"> <img src="images/logo.png"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto nn">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Naša priča
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Prodaja LED bilborda
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Iznajmljivanje bilborda<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Usluge</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Media</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kontakt</a>
+                </li>
+                <button type="button" id="formButton"><img src="images/search.png"></button>
+                <form id="form1">
+                    <input type="search" name="firstName">
+                    <!-- <button type="button" id="submit">Submit</button> -->
+                </form>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section>
+        <!-- Swiper -->
+        <div class="swiper-container swiper-slider ">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"
+                    style="background:url(images/real-slider.jpg) no-repeat center center / cover">
+                    <div class="slider-description">
+                        <h1> ANGERONA <br>
+                            BILBORDI SRBIJA</h1>
+                        <p>Lorem ipsum dolor sit amet,consectetur <br> adipiscing elit.Phasellus pulvinar tincidunt <br>
+                            volutpat</p>
+                    </div>
+                </div>
+                <div class="swiper-slide"
+                    style="background:url(images/real-slider.jpg) no-repeat center center / cover"></div>
+                <div class="swiper-slide"
+                    style="background:url(images/real-slider.jpg) no-repeat center center / cover"></div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 bilbordi1">
+                    <img src="images/mask.png" class="bilbord-maska">
+                    <img src="images/sale.png" class="sale">
+                    <h2>PRODAJA <br> BILBORDA</h2>
+                    <p>Lorem ipsum dolor sit amet,consectetur <br> adipiscing elit.Phasellus pulvinar tincidunt <br>
+                        volutpat</p>
+                    <img src="images/arrow-right.png" class="strelica">
+                </div>
+                <div class="col-md-6 bilbordi2">
+                    <img src="images/mask.png" class="bilbord-maska">
+                    <img src="images/sale1.png" class="sale1">
+                    <h2>IZNAJMLJIVANJE <br> BILBORDA</h2>
+                    <p>Lorem ipsum dolor sit amet,consectetur <br> adipiscing elit.Phasellus pulvinar tincidunt <br>
+                        volutpat</p>
+                    <img src="images/arrow-right.png" class="strelica1">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <!-- Swiper -->
+        <div class="swiper-container swiper-logos">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/hemofarm.png"></div>
+                <div class="swiper-slide"><img src="images/aikbanka.png"></div>
+                <div class="swiper-slide"><img src="images/allabo.png"></div>
+                <div class="swiper-slide"><img src="images/djaksport.png"></div>
+                <div class="swiper-slide"><img src="images/doncafe.png"></div>
+                <div class="swiper-slide"><img src="images/formaideale.png"></div>
+                <div class="swiper-slide"><img src="images/frikom.png"></div>
+                <div class="swiper-slide"><img src="images/gigatron.png"></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3 class="mdd">ANGERONA <br> MEDIA</h3>
+                    <a href="#" display=block position=relative;>
+                        <div class="link-detaljnije">
+                            Detaljnije
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-4 px-0">
+                            <div class="najnovije">
+                                NAJNOVIJE
+                            </div>
+                            <div class="vest" style="background: #fff url(images/biblord.png) no-repeat">
+                                <img class="slika" src="images/massk.png">
+                                <p class="tech">ZANIMLJIVOSTI IZ SVETA TEHNIKE</p>
+                                <p class="tech-text">Lorem ipsum dolor sit amet,consectetur <br> adipiscing
+                                    elit.Phasellus pulvinar tincidunt <br> volutpat</p>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4  px-0">
+                            <div class="najnovije">
+                            </div>
+                            <div class="vest vest2" style="background: #fff url(images/artistry.png) no-repeat">
+                                <img class="slika" src="images/massk.png">
+                                <p class="ld">LED EKRANI SIRE SVOJ SPEKTAR PRIMENE NEVEROVATNOM BRZINOM</p>
+                                <p class="tech-text tech-text2">Lorem ipsum dolor sit amet,consectetur <br> adipiscing
+                                    elit.Phasellus pulvinar tincidunt <br> volutpat</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4  px-0">
+                            <div class="najnovije">
+                            </div>
+                            <div class="vest vest3" style="background: #fff url(images/girl.png) no-repeat">
+                                <img class="slika" src="images/massk.png">
+                                <p class="ld1">A STA STE VI OCEKIVALI?</p>
+                                <p class="tech-text tech-text3">Lorem ipsum dolor sit amet,consectetur <br> adipiscing
+                                    elit.Phasellus pulvinar tincidunt <br> volutpat</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="cotainer-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <ul class="footer-menu">
+                        <li class="prica">Naša priča</li>
+                        <li class="prica1"><a href="#">-O nama</a> </li>
+                        <li class="prica1"><a href="#">-Tim</a></li>
+                        <li class="prica1"><a href="#">-Portfolio</a></li>
+                        <li class="prica1"><a href="#">-Reference</a></li>
+                        <li class="prica1"><a href="#">-Dokumenta za preuzimanje</a></li>
+                    </ul>
+                    <ul class="footer-menu">
+                        <li class="prica">Prodaja LED bilborda</li>
+                        <li class="prica1"><a href="#">-Tehnička podrška</a></li>
+                        <li class="prica1"><a href="#">-Projektovanje konstrukcije za led bilborde</a></li>
+                        <li class="prica1"><a href="#">-Garancija</a></li>
+                        <li class="prica1"><a href="#">-Nase montaže</a></li>
+                    </ul>
+                    <ul class="footer-menu">
+                        <li class="prica"><a href="#" >Iznajmljivanje bilborda</a></li>
+                    </ul>
+                    <ul class="footer-menu">
+                        <li class="prica"><a href="#">Media</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div class="dd">
+                        <h2 class="u-toku">BUDITE U TOKU</h2>
+                        <p class="prijava">
+                            Prijavite se na naš newsletter listu i budite u toku sa svim <br> novostima,
+                            ponudama i promocijama
+                        </p>
+                        <form class="newsletter">
+                            <input type="email" name="email" placeholder="Unesite Vas email" class="mejl">
+                            <button type="submit" class="submit">Prijavite se</button>
+                        </form>
+                        <div class="footer-icons-container">
+                            <div class="footer-icons prvi">
+                                <a href="#"><img src="images/fb.png"></a>
+                            </div>
+                            <div class="footer-icons">
+                                <a href="#"><img src="images/tw.png"></a>
+                            </div>
+                            <div class="footer-icons">
+                                <a href="#"><img src="images/in.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-footer">
+                        <div class="contact-footer-item lokacija">
+                            <h4>ANGERONA DOO</h4>
+                            <p>Stari Korzo 30/4, 12000 <br> Požarevac</p>
+                        </div>
+                        <div class="contact-footer-item broj">
+                            <a href="">+381 12 402 433 </a>
+                            <br>
+                            <a href="">+381 62 79 00 10</a>
+                            <br>
+                            <a href="">+381 69 79 00 16</a>
+                        </div>
+                        <div class="contact-footer-item adresa">
+                            <a href="">angeronamedia@gmail.com</a>
+                            <br>
+                            <a href="">office@angerona.rs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="end">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="nepotrebno">
+                            <p>gjjkghjhfjgh</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="kopirajt">
+                            <p>Copyright © 2019 Angerona d.o.o - Sva prava zadržana.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="credits">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p>Design & Develop by:</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p>Djole</p>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="">
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-slider', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        var swiper = new Swiper('.swiper-logos', {
+            slidesPerView: 7,
+            spaceBetween: 30,
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#formButton").click(function () {
+                $("#form1").toggle();
+            });
+        });
+    </script>
+</body>
+
+</html>
